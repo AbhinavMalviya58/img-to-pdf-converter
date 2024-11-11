@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    padding: 0.5rem 1rem;
+    background: white;
+    border-bottom: 1px solid rgb(245, 244, 244);
+    position: static;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: red;
+}
+.img-icon{
+    color: blue;
+}
+span{
+    font-size: 1.45rem;
+}
+
+#convertBtn,
+#upload-msg {
+    appearance: none;
+    background-color: #ebd0d0;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #86a2ca 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#convertBtn,
+#upload-msg:hover {
+    background-color: #ebbd47;
+    box-shadow: #ff5b09 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+#convertBtn,
+#upload-msg:active {
+    transform: scale(1.025);
+}
+
+#convertBtn {
+    display: none;
+}
+
+/* --------------------------------input page ------------------------*/
+.input-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.add-more-files {
+    width: 50vh;
+    border-radius: 0.3rem;
+    padding: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right,
+    #ff7a18,
+    #af002d,
+    #319197 100%,
+    #319197 200%);
+background-position-x: 0%;
+background-size: 200%;
+border: 0;
+border-radius: 8px;
+color: #fff;
+padding: 1rem 1.25rem;
+text-shadow: 0 1px 1px #333;
+transition: all 0.25s;
+}
+.add-more-files:hover{
+    background-position-x: 100%;
+        transform: scale(1.1);
+}
+/* .choose-file {
+    
+    }
+
+.choose-file:hover {
+
+} */
+.inp-container{
+    cursor: pointer;
+    
+}
+#upload-file{
+    opacity: 0;
+    display: block;
+    height: 16rem;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+/* #custom-file{
+
+} */
+
+.drop{
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: rgb(108,107,175);
+}
+/* PDF page */
+
+.pdf-page{
+    min-height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.create-pdf{
+    position: relative;
+    padding: 1rem;
+    margin: auto;
+}
+.file-item{
+    padding: 0 1rem;
+    background: none;
+    text-align: center;
+    position: relative;
+    width: 10rem;
+    height: 16rem;
+    margin: 1rem;
+    display: inline-block;
+    transition: 0.3s all ease-in-out;
+    box-shadow: rgb(0,0,0,0.24) 0px 3px 8px;
+}
+.modify button{
+    padding-left: 0.3rem;
+    font-size: 1rem;
+    color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.img-container{
+    width: 8.5rem;
+    margin: auto;
+    height: 11rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img{
+    position: relative;
+    max-width: 9rem;
+    max-height: 11rem;
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0.1rem solid rgb(223,223,222);
+}
+
+
+
+/* phone CSS */
+@media (min-width: 500px) {
+
+    #convertBtn,
+    #upload-msg {
+        font-size: 0.5rem;
+        padding: .75rem 2rem;
+    }
+}
